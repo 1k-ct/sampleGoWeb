@@ -17,6 +17,6 @@ func main() {
 		c.String(http.StatusOK, "", todos)
 	})
 	db.Init()
-	r.Run()
-	db.Close()
+	server.Init()
+	defer db.Close()
 }
