@@ -7,4 +7,14 @@
 
   Saveは強力である一方で、「Updateのつもりで使ったら、該当IDが存在しない場合は意図せず新規レコードが作成されてしまう」など、不測の結果を招きやすいのが玉にキズです。まずはCreateやUpdateで代用できないかを考えましょう。  
   [qiita](https://qiita.com/ttiger55/items/3606b8dd570637c12387)
----
+---  
+追加　　
+server  
+```go
+ctrl.create 定義されてない　　
+pacakge cntorll  
+import (...)  
+func (c *..) Creat(c *gin.Context) {
+  ...
+}
+```
